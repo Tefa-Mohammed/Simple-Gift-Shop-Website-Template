@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+  <link rel="icon" href="images/link.webp">
+  <link rel="stylesheet" href="../../css/all.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ====PRELOADER PAGE===== -->
+  <div class="loader">
+    <img src="images/preloader.svg" alt="preloader" class="img-fluid">
+  </div>
+
+  <!-- ==========START HEADER SECTION======== -->
+  <header>
+    <!-- NAVBAR IN LARGE WINDOW  -->
+    <nav class="navbar">
+      <div class="container d-flex">
+        <a class="brand w-25 mr-auto " href="../../index.html">
+          <img src="images/logo.png" alt="Logo Brand" class="img-fluid w-75">
+        </a>
+        <div class="sideBar sideClose text-center mr-auto">
+          <ul class="links m-auto d-flex justify-content-center align-items-center w-100">
+            <li><a href="../../index.html">Home Pages</a>
+              <ul class="dropDown">
+                <li class="d-flex align-items-center justify-content-between"><a href="">Home V1</a></li>
+                <li class="d-flex align-items-center justify-content-between"><a href="">Home V2</a></li>
+              </ul>
+            </li>
+            <li><a href="../../blog/blog.html">Blog</a>
+              <ul class="dropDown">
+                <li class="d-flex align-items-center justify-content-between"><a href="">Blog Archive</a><i
+                    class="fas fa-angle-right p-0 m-0"></i></li>
+                <li class="d-flex align-items-center justify-content-between"><a href="">Blog Single </a><i
+                    class="fas fa-angle-right p-0 m-0"></i></li>
+              </ul>
+            </li>
+            <li><a href="#">Pages</a>
+              <ul class="dropDown">
+                <li class="d-flex align-items-center justify-content-between"><a href="../about/about.html">About Us</a>
+                </li>
+                <li class="d-flex align-items-center justify-content-between"><a href="../login/login.html">Login</a>
+                </li>
+                <li class="d-flex align-items-center justify-content-between"><a href="../sign/sign.html">Sign Up</a>
+                </li>
+                <li class="d-flex align-items-center justify-content-between"><a href="../check/check.html">Checkout</a>
+                </li>
+                <li class="d-flex align-items-center justify-content-between"><a href="./cart.html">Cart</a> </li>
+                <li class="d-flex align-items-center justify-content-between"><a href="../product/product.html">Product
+                    Details</a> </li>
+              </ul>
+            </li>
+            <li><a href="../../index.html">Gifts</a>
+              <ul class="dropDown">
+                <li class="d-flex align-items-center justify-content-between"><a href="">Gift Archive </a></li>
+                <li class="d-flex align-items-center justify-content-between"><a href="">Gift Details </a></li>
+              </ul>
+            </li>
+            <li><a href="../../shop/shop.html">Shop</a></li>
+            <li><a href="../../contact/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR IN SMALL WINDOW  -->
+    <div class="sidIcons">
+      <i class="fas fa-align-right"></i>
+    </div>
+    <div class="subtitle ">
+      <div class="contents text-center">
+        <h1>Cart</h1>
+        <p><a href="../../index.html">Home</a> / Cart</p>
+      </div>
+    </div>
+  </header>
+  <!-- ==========END HEADER SECTION======== -->
+
+  <!-- ===========START CART FORM & DETAILS SECTION============ -->
+  <div class="cart py-5">
+    <div class="container pt-5">
+      <div class="row mx-0">
+        <div class="cart_details col-12 mb-5">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Product </th>
+                <th scope="col">Price </th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody class="thead-light">
+              <tr class="bg-light">
+                <th scope="col">
+                  <h4>Valentine Ring</h4>
+                  <p>Red Color</p>
+                </th>
+                <th scope="col">29 $</th>
+                <th scope="col" class="w-25">
+                  <input type="number" min="1" class="form-control w-50 price1" placeholder="1">
+                </th>
+                <th scope="col" class="total1"> </th>
+              </tr>
+              <tr class="bg-light">
+                <th scope="col">
+                  <h4>Chocolate</h4>
+                  <p>Wood Material </p>
+                </th>
+                <th scope="col">29 $</th>
+                <th scope="col" class="w-25">
+                  <input type="number" min="1" class="form-control w-50 price2" placeholder="1">
+                </th>
+                <th scope="col" class="total2"> </th>
+              </tr>
+              <tr class="bg-light">
+                <th scope="col">
+                  <h4>Ring</h4>
+                  <p>Wood Material </p>
+                </th>
+                <th scope="col">29 $</th>
+                <th scope="col" class="w-25">
+                  <input type="number" min="1" class="form-control w-50 price3" placeholder="1">
+                </th>
+                <th scope="col" class="total3"> </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6 m-auto ">
+          <h2>Cart Total </h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="col" class="bg-dark">Subtotal </th>
+                <th scope="col" class="bg-light">90.99$ </th>
+              </tr>
+              <tr>
+                <th scope="col" class="bg-dark">Tax </th>
+                <th scope="col" class="bg-light">9.99$ (11%) </th>
+              </tr>
+              <tr>
+                <th scope="col" class="bg-dark">Total </th>
+                <th scope="col" class="bg-light font-weight-bold">99.99$ </th>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn">proceed to checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==========END CART FORM & DETAILS SECTION======== -->
+
+  <!-- =========START SUBSCRIBE SECTION========== -->
+  <div class="subscribe py-5">
+    <div class="container text-center">
+      <h2>Subscribe to My Newsletter </h2>
+      <p>Get access to my latest Gifts by joining the weekly newsletter </p>
+      <div class="form w-50 m-auto">
+        <input type="email" placeholder="Enter Your Email Address" class="form-control">
+        <button class="btn">submit</button>
+      </div>
+    </div>
+  </div>
+  <!-- =========END SUBSCRIBE SECTION========== -->
+
+  <!-- ====START GALLERY SECTION===== -->
+  <div class="gallery pt-3">
+    <div class="img">
+      <img src="images/gallery/1.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/2.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/3.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/4.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/5.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/6.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/7.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/8.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/9.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/10.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/11.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+    <div class="img">
+      <img src="images/gallery/12.jpg" alt="GALLERY" class="rounded img-fluid">
+      <div class="insta"><i class="fab fa-instagram"></i></div>
+    </div>
+  </div>
+  <div class="images_container" id="images_container">
+    <div class="img_box" id="img_box">
+      <span class="left" id="prev"><i class="fas fa-arrow-left"></i></span>
+      <span class="right" id="next"><i class="fas fa-arrow-right"></i></span>
+    </div>
+  </div>
+  <!-- ====END GALLERY SECTION===== -->
+
+  <!-- ======START FOOTER====== -->
+  <footer>
+    <div class="container">
+      <div class="contents py-5">
+        <div class="row mx-0">
+          <div class="location col-12 col-md-4 mb-4 mb-md-0">
+            <img src="images/logo.png" alt="footer" class="img-fluid w-75 mb-4">
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> 28 Street, New York City, USA </li>
+              <li><i class="fas fa-phone-alt"></i> +000126286999 </li>
+              <li><i class="fas fa-envelope"></i> doitezy@gmail.com </li>
+            </ul>
+          </div>
+          <div class="gifts col-12 col-md-4 mb-4 mb-md-0 pl-5">
+            <h5>Gifts</h5>
+            <ul>
+              <li>Birthday</li>
+              <li>New Year</li>
+              <li>Dinner</li>
+              <li>Anniversary</li>
+              <li>Parties</li>
+            </ul>
+          </div>
+          <div class="form col-12 col-md-4 mb-4 mb-md-0">
+            <h5>Newsletter </h5>
+            <input type="text" value="" placeholder="Your Name" class="form-control mb-3">
+            <input type="email" value="" placeholder="Your Email" class="form-control mb-3">
+            <button class="btn">subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="end py-3 w-100 d-flex align-items-center justify-content-between text-white">
+        <p class="m-0">© Copyright 2021 - YourWebsite All Rights Reserved. </p>
+        <div class="icons">
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-twitter"></i></span>
+          <span><i class="fab fa-pinterest-p"></i></span>
+          <span><i class="fab fa-linkedin-in"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ======END FOOTER====== -->
+
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
